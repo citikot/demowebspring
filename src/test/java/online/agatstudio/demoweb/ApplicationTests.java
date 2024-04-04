@@ -1,10 +1,10 @@
-package online.agatstudio.topic11;
+package online.agatstudio.demoweb;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class Topic11ApplicationTests {
+class ApplicationTests {
 
 	@Test
 	void contextLoads() {

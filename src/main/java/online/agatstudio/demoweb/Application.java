@@ -1,13 +1,13 @@
-package online.agatstudio.topic11;
+package online.agatstudio.demoweb;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class Topic11Application {
+public class Application {
 
 	public static void main(String[] args) {
-		SpringApplication.run(Topic11Application.class, args);
+		SpringApplication.run(Application.class, args);
 	}
 
 }
