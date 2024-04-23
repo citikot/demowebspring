@@ -1,16 +1,12 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
-<head>
-    <meta charset="UTF-8">
-    <title>Login Result</title>
-    <link href="/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/css/style.css" rel="stylesheet">
-</head>
+<html layout:decorate="layouts/defaultLayout" xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.w3.org/1999/xhtml">
 <body>
-<div class="container my-5" th:object="${Login}">
-    <p>Username: <span th:text="*{username}"></span></p>
-    <p>Password: <span th:text="*{password}"></span></p>
+<div layout:fragment="content">
+    <div class="container my-5" th:object="${Login}">
+        <p>Username: <span th:text="*{username}"></span></p>
+        <p>Password: <span th:text="*{password}"></span></p>
+    </div>
 </div>
-
 </body>
 </html>

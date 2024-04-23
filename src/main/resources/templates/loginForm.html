@@ -1,16 +1,7 @@
 <!doctype html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>User Login Form</title>
-    <link href="/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/css/style.css" rel="stylesheet">
-</head>
+<html layout:decorate="layouts/defaultLayout" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.w3.org/1999/xhtml">
 <body>
-<div class="container my-5">
+<div class="container my-5" layout:fragment="content">
     <form action="#" method="post" th:action="@{processLogin}" th:object="${Login}">
         <div class="mb-3">
             <label for="username" class="form-label">Username</label>
